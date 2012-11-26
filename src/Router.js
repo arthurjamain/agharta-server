@@ -13,5 +13,5 @@ var setRoutes = function setRoutes() {
     socket.on('player.stop',       mediaPlayerController.routes.stop);
     socket.on('player.previous',   mediaPlayerController.routes.previousMedia);
     socket.on('player.next',       mediaPlayerController.routes.nextMedia);
-  }); 
+  });
 }
