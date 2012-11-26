@@ -4,7 +4,7 @@ var vlc = require('vlc')([
   '--verbose', '1',
   '--no-video-title-show',
   '--no-disable-screensaver',
-  '--no-snapshot-preview',
+  '--no-snapshot-preview'
 ]);
 var player = vlc.mediaplayer;
 
@@ -15,7 +15,7 @@ exports.routes = {
         player.play();
     },
     pause: function(data) {
-        console.log("play")
+        console.log("pause");
         player.play();
     },
     stop: function(data) {
@@ -23,7 +23,7 @@ exports.routes = {
         player.stop();
     },
     previousMedia: function(data) {
-        console.log("stop");
+        console.log("previous");
         player.stop();
     },
     nextMedia: function(data) {
